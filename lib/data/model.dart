@@ -25,6 +25,7 @@ class QuotesDataModel {
 
   factory QuotesDataModel.fromJson(Map<String, dynamic> json) {
     List<QuotesModel> mQuotes = [];
+
     for (Map<String, dynamic> eachQuote in json["quotes"]) {
       QuotesModel eachModel = QuotesModel.fromJson(eachQuote);
       mQuotes.add(eachModel);
